@@ -16,7 +16,7 @@ MonoBehaviour:
   health: 50
   speed: 1
   damage: 1
-  award: 25
+  award: 30
   spawnInterval: 1
   priority: 1
   startDay: 0

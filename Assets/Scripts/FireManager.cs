@@ -54,7 +54,7 @@ public class FireManager : MonoBehaviour
 
     public Player player;
 
-    private float checkInterval = 0.2f; // 0.5 saniye aralıklarla kontrol edilecek
+    private float checkInterval = 0.1f; // 0.5 saniye aralıklarla kontrol edilecek
     private float lastCheckedTime = 0f;
 
     private IEnumerator coroutine;
@@ -81,17 +81,19 @@ public class FireManager : MonoBehaviour
             // Kontrol kodları burada
             if (GameManager.instance.money >= 600)
             {
-                GameUI4.SetActive(true);
-                GameUI4Of.SetActive(false);
+
                 GameUI5Of.SetActive(false);
                 GameUI5.SetActive(true);
+                GameUI3.SetActive(true);
+                GameUI3Of.SetActive(false);
             }
             else
             {
-                GameUI4.SetActive(false);
-                GameUI4Of.SetActive(true);
+
                 GameUI5Of.SetActive(true);
                 GameUI5.SetActive(false);
+                GameUI3.SetActive(false);
+                GameUI3Of.SetActive(true);
             }
 
             if (GameManager.instance.money >= 250)
@@ -109,15 +111,15 @@ public class FireManager : MonoBehaviour
                 GameUI1Of.SetActive(true);
             }
 
-            if (GameManager.instance.money >= 600)
+            if (GameManager.instance.money >= 500)
             {
-                GameUI3.SetActive(true);
-                GameUI3Of.SetActive(false);
+                GameUI4.SetActive(true);
+                GameUI4Of.SetActive(false);
             }
             else
             {
-                GameUI3.SetActive(false);
-                GameUI3Of.SetActive(true);
+                GameUI4.SetActive(false);
+                GameUI4Of.SetActive(true);
             }
 
             yield return new WaitForSeconds(checkInterval);
@@ -209,7 +211,7 @@ public class FireManager : MonoBehaviour
         if (GameManager.instance.money >= 600)
         {
             GameManager.instance.money -= 600;
-            player.health += 5;
+            player.health = 10;
         }
         else
         {
