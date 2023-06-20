@@ -36,6 +36,7 @@ public class FireManager : MonoBehaviour
 
     public AudioSource knifeSound;
     public AudioSource GunSound;
+    public AudioSource RageSkillSound;
     public AudioClip knifeSoundClip;
 
     [SerializeField]
@@ -336,11 +337,16 @@ public class FireManager : MonoBehaviour
         player.health += 0.25f;
         RageButton.SetActive(false);
         rageObject.SetActive(true);
-        yield return new WaitForSeconds(2f); 
+
+        yield return new WaitForSeconds(2f);
+        RageSkillSound.Play();
+
         animator.SetBool("isRageSkill", false);
         isRageSkill = false;
         //rageObject.transform.DOScale(new Vector3(3, 3, 3), 0.2f).SetLoops(-1,LoopType.Restart);
+    
         rageObject.transform.DOPunchScale(new Vector3(3, 3, 3),1,1,1);
+
         // rageObject.transform.DOShakeScale(0.5f, 0.5f);
         yield return new WaitForSeconds(2f);
 
