@@ -10038,7 +10038,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 852381651}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f8c72b6cfa104641bb9af3977164b9e, type: 3}
   m_Name: 
@@ -10061,6 +10061,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0000005, y: 2.0000005, z: 2.0000005}
   m_Center: {x: 0, y: 1.0000002, z: 0}
+--- !u!114 &852381658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852381651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a48a3a65d2ed50349bb4f32a8a1395cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &861577435 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 74c1255e5b474c140bde251aeb14a531, type: 3}
@@ -14398,6 +14410,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 87e7d3b3267cd0d4997361090a1c8e01, type: 3}
   m_PrefabInstance: {fileID: 588115534}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1404295355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558595635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0fd4e567253d54f977827750950bda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kalp: {fileID: 558595635}
 --- !u!1001 &1414296057
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15210,10 +15235,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fae905d866acd34419add9db994b75d8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3eb52dd9bd842ea44ac56f7868fa9c8d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.656
-  m_Pitch: 1
+  m_Volume: 0.23
+  m_Pitch: -1.94
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -32978,11 +33003,11 @@ MonoBehaviour:
   isActiceFire: 0
   bullet: {fileID: 1343504842343394, guid: df7af1a2f7d29504aaa8286f9ddf60dd, type: 3}
   firePoint: {fileID: 3766016081345610085}
-  damage: 2
+  damage: 4
   DamageText: {fileID: 94044070}
   SpeedText: {fileID: 24318159}
   FireRateText: {fileID: 359834575}
-  fireRate: 0.75
+  fireRate: 0.5
   enemyFinder: {fileID: 3766016082418245836}
   spine1: {fileID: 2660569346593770916}
   joystickPlayer: {fileID: 3766016081715997776}

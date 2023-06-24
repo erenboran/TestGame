@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Enemy1
   m_EditorClassIdentifier: 
   enemyName: Enemy1
-  health: 50
+  health: 30
   speed: 1
   damage: 1
   award: 30

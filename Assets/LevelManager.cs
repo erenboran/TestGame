@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
+
+    private int sonKaydedilenSeviye;
+
     private void Awake()
     {
         Time.timeScale = 1;
@@ -18,7 +21,11 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+            Debug.Log("kapan");
+        }
     }
 
     public void RestartLevel()
@@ -45,5 +52,5 @@ public class LevelManager : MonoBehaviour
     {
         Time.timeScale = 1;
     }
-
+    
 }
